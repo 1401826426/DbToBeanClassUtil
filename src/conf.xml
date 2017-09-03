@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Db2Bean>
+	<db>
+		<url>jdbc:mysql://172.21.251.1:3306/comment?useUnicode=true&amp;characterEncoding=utf8</url>
+		<user>root</user>
+		<password>123456</password>
+	</db>
+
+	<beans>
+		<bean tableName="ad">
+		    <package>com.test.beans</package>
+		    <className>Ad</className>
+		    <superClass>com.test.beans.BaseBean</superClass>
+		    <superInterfaces>
+		       <superInterface>java.io.Serializable</superInterface>
+		    </superInterfaces>
+		    <columns>
+			    <column tableColumn="id">
+					<name>id</name>
+					<type>int</type>
+					<defaultValue>10</defaultValue>
+				</column>
+		    </columns>
+		</bean>
+		<bean tableName="business"></bean>
+		<bean tableName="comment"></bean>
+		<bean tableName="dic"></bean>
+		<bean tableName="orders"></bean>
+	</beans>
+</Db2Bean>
