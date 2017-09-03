@@ -1,0 +1,2 @@
+# DbToBeanClassUtil
+读取数据库中的表创建相应的Bean类工具
